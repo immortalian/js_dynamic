@@ -47,3 +47,11 @@ document.write("( 3 + 2) * 5 =", ( 3 + 2) * 5, "<br />");
  document.write("Math.PI = ", Math.PI, "<br />");
  document.write("Math.log(10) = ", Math.log(10), "<br />");
  document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br />");
+
+//  random values 12:00
+document.write("Random # (1-10) =", Math.floor((Math.random() * 10) + 1),"<br />");
+
+// convert strings into numbers
+document.write("Converted String : ", Number("3.14"), "<br />");
+document.write("Converted Int : ", parseInt("3.14"), "<br />");
+document.write("Converted Float : ", parseFloat("3.14"), "<br />");
