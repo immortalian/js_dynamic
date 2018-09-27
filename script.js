@@ -55,3 +55,29 @@ document.write("Random # (1-10) =", Math.floor((Math.random() * 10) + 1),"<br />
 document.write("Converted String : ", Number("3.14"), "<br />");
 document.write("Converted Int : ", parseInt("3.14"), "<br />");
 document.write("Converted Float : ", parseFloat("3.14"), "<br />");
+ 
+// strings 13:21 
+var randStr = "A long " + "string that " + "goes on and on" ;
+
+document.write("String Length ", randStr.length + "<br />");
+document.write("Index for \"goes\" : ", randStr.indexOf("goes"), "<br />");
+
+document.write(randStr.slice(19, 23) + "<br />");
+document.write(randStr.slice(19) + "<br />");
+document.write(randStr.substr(19, 4) + "<br />");
+
+// replace part of the string
+document.write(randStr.replace("and on", "forever") + "<br />");
+document.write("At Index 2 : ", randStr.charAt(2) + "<br />");
+
+// split an string into an array 
+var randStrArray = randStr.split(" ");
+
+document.write(randStrArray +"<br />");
+
+randStr = randStr.trim();
+
+document.write(randStr = randStr.trim(), "<br />");
+
+document.write(randStr.toUpperCase() + "<br />");
+document.write(randStr.toLowerCase() + "<br />");
