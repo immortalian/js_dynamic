@@ -81,3 +81,17 @@ document.write(randStr = randStr.trim(), "<br />");
 
 document.write(randStr.toUpperCase() + "<br />");
 document.write(randStr.toLowerCase() + "<br />");
+ 
+// styling strings 17:24
+var strToStyle = "Random String" ;
+
+document.write("Big : ", strToStyle.big(), "<br />");
+document.write("Bold : ", strToStyle.bold(), "<br />");
+document.write("Font Color : ", strToStyle.fontcolor("blue"), "<br />");
+document.write("Font Size : ", strToStyle.fontsize("8em"), "<br />");
+document.write("Italics : ", strToStyle.italics(), "<br />");
+document.write("Google : ", strToStyle.link("https://google.com"), "<br />");
+document.write("Small : ", strToStyle.small(), "<br />");
+// document.write("Strike : ", strToStyle.stike(), "<br />"); not supported in html5
+document.write("Sub : ", strToStyle.sub(), "<br />");
+document.write("Sup : ", strToStyle.sup(), "<br />");
