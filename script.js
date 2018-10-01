@@ -95,3 +95,27 @@ document.write("Small : ", strToStyle.small(), "<br />");
 // document.write("Strike : ", strToStyle.stike(), "<br />"); not supported in html5
 document.write("Sub : ", strToStyle.sub(), "<br />");
 document.write("Sup : ", strToStyle.sup(), "<br />");
+
+//  if statement 18:14
+// Relational Operators : === != > < >= <=
+// Logical Operators : && || !
+var age = 13;
+
+if ((age >= 5) && (age <= 6)){
+    document.write("Go to Kindergarden" +"<br />");
+} else if (age > 18) {
+    document.write("Go to College" + "<br />");
+} else {
+    document.write("Go to Grade", age - 5, "<br />");
+}
+    document.write("true || false", true || false, "<br />");
+
+    document.write("!true ", !true, "<br />");
+
+    document.write("\"5\" == 5 = ", ("5" == 5), "<br />");
+
+    document.write("\"5\" === 5 = ", ("5" === 5), "<br />");
+// a string and a number false as the values and types are not equal
+
+
+
