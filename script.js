@@ -99,7 +99,7 @@ document.write("Sup : ", strToStyle.sup(), "<br />");
 //  if statement 18:14
 // Relational Operators : === != > < >= <=
 // Logical Operators : && || !
-var age = 6;
+var age = 25;
 
 if ((age >= 5) && (age <= 6)){
     document.write("Go to Kindergarden" +"<br />");
@@ -130,4 +130,10 @@ switch(age) {
     default : 
     document.write("Subtract 5 from your age" + "<br />");
 }
+//  ternary operator 23:04
+// (condition) ? ifTrue : ifFalse
+ var canIVote = (age >= 18) ? true : false;
+
+ document.write("canIVote : " , canIVote, "<br />" );
+
 
