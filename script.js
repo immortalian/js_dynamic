@@ -168,3 +168,44 @@ for (j = 0; j <= 20; j++){
  for (k in customer){
      document.write(customer [k] +"<br />");
  }
+//  Arrays 28:39
+var tomSmith = ["Tom Smith", "123 Main", 120.50];
+document.write("1st Index ",  tomSmith[2], "<br />");
+
+tomSmith[3] = "tSmith@aol.com";
+
+tomSmith.splice(2, 1, "Pittsburgh", "PA");
+
+tomSmith.splice(4, 1);
+// convert an array into a string
+
+document.write("Array : ", tomSmith.valueOf() , "<br />");
+
+document.write("Array : ", tomSmith.join(",") , "<br />");
+
+delete tomSmith[3];
+
+tomSmith.sort();
+
+var numbers = [4, 3, 9, 1, 20, 43];
+
+numbers.sort(function(x,y){ return y - x});
+
+document.write("Num Array : ", numbers.toString(), "<br />");
+// combine arrays
+var combinedArray = numbers.concat(tomSmith);
+// remove last item on tomSmith array
+tomSmith.pop();
+// add items to the end of tomSmith array
+tomSmith.push("555-1212", "US");
+// to delete only the first item
+tomSmith.shift();
+// add items to the very first index
+tomSmith.unshift("Tom Wakawei Smith");
+// cycle through all the items in the array
+for( i = 0; i < tomSmith.length; i++){
+    document.write(tomSmith[i], "<br />");
+}
+
+
+
