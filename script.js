@@ -99,7 +99,7 @@ document.write("Sup : ", strToStyle.sup(), "<br />");
 //  if statement 18:14
 // Relational Operators : === != > < >= <=
 // Logical Operators : && || !
-var age = 13;
+var age = 6;
 
 if ((age >= 5) && (age <= 6)){
     document.write("Go to Kindergarden" +"<br />");
@@ -117,5 +117,17 @@ if ((age >= 5) && (age <= 6)){
     document.write("\"5\" === 5 = ", ("5" === 5), "<br />");
 // a string and a number false as the values and types are not equal
 
+// switch 21:44
+switch(age) {
+    case 5 :
+    case 6 : 
+    document.write("Go to Kindergarten" + "<br />");
+    break;
 
+    case 7 :
+    document.write("Go to 1st grade" + "<br />");
+    break;
+    default : 
+    document.write("Subtract 5 from your age" + "<br />");
+}
 
