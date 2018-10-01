@@ -151,3 +151,20 @@ while( i <= 10){
 
 //     alert("You guessed 15!");
 
+// for 25:51
+for (j = 0; j <= 20; j++){
+
+    if((j % 2) === 0){
+        continue;
+    }
+    if( j === 15){
+       break; 
+    }
+    document.write(j +"<br />");
+}
+// for in 27:37
+ var customer = {name : "Bob Thomas", address : "123 Main", balance : 50.50};
+
+ for (k in customer){
+     document.write(customer [k] +"<br />");
+ }
