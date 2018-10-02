@@ -236,3 +236,9 @@ function multiply(fsociety, num){
 document.write("2 * 15 = ", multiply(times2, 15), "<br />");
 
 document.write("3 * 15 = ", multiply(times3, 15), "<br />");
+
+// assigning a function to a variable
+var triple = function(num){
+    return num * 3;
+}
+document.write("3 * 45 = ", multiply(triple, 45), "<br />");
