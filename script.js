@@ -252,3 +252,14 @@ function getSum(){
     return sum;
 }
 document.write("Sum = ", getSum(1,2,3,4,5,6,), "<br />");
+// Return Variable Number of Arguments 40:55
+// return a variable No. of arguments by using an array 
+function times2(theArray){
+    // new empty array
+    var newArray = [];
+    for(i = 0; i < theArray.length; i++){
+        newArray.push(theArray[i] * 2);
+    }
+    return newArray;
+}
+document.write("Array Double = ", times2([1,2,3,4,5]).toString(), "<br />");
