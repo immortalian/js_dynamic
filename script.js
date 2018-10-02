@@ -206,6 +206,16 @@ tomSmith.unshift("Tom Wakawei Smith");
 for( i = 0; i < tomSmith.length; i++){
     document.write(tomSmith[i], "<br />");
 }
+// functions 34:42
+function inArray(arrayToCheck, value){
+    for(i = 0; i < arrayToCheck.length; i++){
+        if(arrayToCheck[i] === value){
+            return true;
+        }
+    }
+    return false;
+}
 
+var randArray = [1,2,3,4,5];
 
-
+document.write("In Array : ", inArray(randArray, 4),"<br />");
