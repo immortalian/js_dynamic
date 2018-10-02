@@ -263,3 +263,16 @@ function times2(theArray){
     return newArray;
 }
 document.write("Array Double = ", times2([1,2,3,4,5]).toString(), "<br />");
+// Recursive Functions 42:02
+// recursive function- a function that calls itself
+function factorial(num){
+    if(num <= 1){
+        return 1;
+    } else {
+        return num * factorial(num - 1);
+    }
+}
+// 1st: num = 4 * factorial(3) = 4 * 6 = 24
+// 2nd: num = 3 * factorial(2) = 3 * 2 = 24
+// 3rd: num = 2 * factorial(1) = 2 * 1 = 2
+document.write("Factorial of 4 =", factorial(4), "<br />");
