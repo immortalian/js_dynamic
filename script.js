@@ -242,3 +242,13 @@ var triple = function(num){
     return num * 3;
 }
 document.write("3 * 45 = ", multiply(triple, 45), "<br />");
+// receive variable Number of Arguments 39:42
+// variable No. of arguments into a function
+function getSum(){
+    var sum = 0;
+    for(i = 0; i < arguments.length; i++){
+        sum += arguments[i];
+    }
+    return sum;
+}
+document.write("Sum = ", getSum(1,2,3,4,5,6,), "<br />");
