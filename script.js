@@ -219,3 +219,20 @@ function inArray(arrayToCheck, value){
 var randArray = [1,2,3,4,5];
 
 document.write("In Array : ", inArray(randArray, 4),"<br />");
+// pass function as parameter 36:41
+// var2 is a local variable - it lives inside the function doesn't exit outside
+function times2(num){
+    var var2 = 2;
+    return num * var2;
+}
+// document.write("var2" , var2, "<br />");
+
+function times3(num){
+    return num * 3;
+}
+function multiply(fsociety, num){
+    return fsociety(num);
+}
+document.write("2 * 15 = ", multiply(times2, 15), "<br />");
+
+document.write("3 * 15 = ", multiply(times3, 15), "<br />");
