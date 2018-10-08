@@ -276,3 +276,7 @@ function factorial(num){
 // 2nd: num = 3 * factorial(2) = 3 * 2 = 24
 // 3rd: num = 2 * factorial(1) = 2 * 1 = 2
 document.write("Factorial of 4 =", factorial(4), "<br />");
+// Event handling 43:54
+ function openAlert(mess){
+     alert(mess);
+ }
