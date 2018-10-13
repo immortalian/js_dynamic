@@ -280,3 +280,21 @@ document.write("Factorial of 4 =", factorial(4), "<br />");
  function openAlert(mess){
      alert(mess);
  }
+//  51:30 key events
+function getChar(event){
+    if(event.which == null){
+        return String.fromCharCode(event.keyCode);
+    }else if (event.which != 0 && event.charCode != 0){
+        return String.fromCharCode(event.which);
+    }else {
+        return null;
+    }
+}
+
+document.getElementById('charInput').onkeypress = function(event){
+    var char = getChar(event || window.event)
+    if(!char) return false;
+
+    document.getElementById('keyData').innerHTML = char + " was clicked";
+    return true;
+}
