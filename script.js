@@ -323,3 +323,16 @@ document.getElementById('logo').onmouseout = function(event){
 document.getElementById('logo').onclick = function(event){
     document.getElementById('logo').className = "hidden";
 }
+// Mouse X / Y coordinates 59:20
+document.body.onmousemove = function(e){
+    e = e || window.event;
+    var pageX = e.pageX;
+    var pageY = e.pageY;
+
+    if(pageX === undefined){
+        pageX = e.clientX + document.body.scrollLeft + documentElement.scrollLeft;
+        pageY = e.clientY + document.body.scrollTop + documentElement.scrollTop;
+    }
+    document.getElementById('mouseX').value = pageX;
+    document.getElementById('mouseY').value = pageY;
+};
