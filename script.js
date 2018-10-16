@@ -310,7 +310,16 @@ document.getElementById('charInput').onselect = function(event){
 document.getElementById('logoButton').onclick = function(event){
     document.getElementById('logo').className = "show";
 }
+// change Input Element 57:43
 document.getElementById('logo').onmouseover = function(event){
     document.getElementById('logo').src="/assets/5txax3.jpg";
     document.getElementById('mouseInput').value = "Mouse Over Image";
+} 
+document.getElementById('logo').onmouseout = function(event){
+    document.getElementById('logo').src="/assets/Cartoon-Sunset-Painting.jpg";
+    document.getElementById('mouseInput').value = "Mouse Left Image";
+} 
+// make logo disappear when the image is clicked on
+document.getElementById('logo').onclick = function(event){
+    document.getElementById('logo').className = "hidden";
 }
