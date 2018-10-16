@@ -298,3 +298,11 @@ document.getElementById('charInput').onkeypress = function(event){
     document.getElementById('keyData').innerHTML = char + " was clicked";
     return true;
 }
+// change tag value 55:05
+ document.getElementById('charInput').onfocus = function(event){
+     document.getElementById('keyData').innerHTML = "Input Gained Focus";
+ }
+//  if the user selected any text
+document.getElementById('charInput').onselect = function(event){
+    document.getElementById('keyData').innerHTML = "Text Selected";
+}
