@@ -306,3 +306,11 @@ document.getElementById('charInput').onkeypress = function(event){
 document.getElementById('charInput').onselect = function(event){
     document.getElementById('keyData').innerHTML = "Text Selected";
 }
+// change class 56:41
+document.getElementById('logoButton').onclick = function(event){
+    document.getElementById('logo').className = "show";
+}
+document.getElementById('logo').onmouseover = function(event){
+    document.getElementById('logo').src="/assets/5txax3.jpg";
+    document.getElementById('mouseInput').value = "Mouse Over Image";
+}
