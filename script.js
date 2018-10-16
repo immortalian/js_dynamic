@@ -336,3 +336,14 @@ document.body.onmousemove = function(e){
     document.getElementById('mouseX').value = pageX;
     document.getElementById('mouseY').value = pageY;
 };
+// Get Elements By Tag Names 1:01:28
+// clear all our inputs
+document.getElementById('clearInputs').onClick = function(event){
+    var inputElements = document.getElementsByTagName('input')
+    
+  for (var i = 0; i < inputElements.length; i++) {
+      if (inputElements[i].type == "text") {
+        inputElements[i].value = " ";
+      }
+  }  
+}
