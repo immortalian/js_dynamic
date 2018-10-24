@@ -369,3 +369,18 @@ document.getElementById('chgBorderColor').onclick = function(event){
 document.write("Current URL : ", window.location.href, "<br />");
 document.write("Current HOST : ", window.location.hostname, "<br />");
 document.write("Current Path : ", window.location.pathname, "<br />");
+
+document.getElementById('goToGoogle').onclick = function(event){window.location.href = "http://google.com"}
+
+document.getElementById('forwardPage').onclick = function(event){
+    history.forward();
+}
+document.getElementById('backPage').onclick = function(event){
+    history.back();
+}
+document.getElementById('reload').onclick = function(event){
+    window.location.reload(true);
+}
+// jump to browser's history where user been -2 to go back in history two places and forward is +
+
+// history.go(-2)
