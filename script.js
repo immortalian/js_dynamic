@@ -365,3 +365,7 @@ document.getElementById('chgBorderWidth').onclick = function(event){
 document.getElementById('chgBorderColor').onclick = function(event){
     document.getElementById('sampDiv').style.borderColor = "blue";
                 }
+// Manipulating URLs 1:05:48
+document.write("Current URL : ", window.location.href, "<br />");
+document.write("Current HOST : ", window.location.hostname, "<br />");
+document.write("Current Path : ", window.location.pathname, "<br />");
