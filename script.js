@@ -343,7 +343,25 @@ document.getElementById('clearInputs').onClick = function(event){
     
   for (var i = 0; i < inputElements.length; i++) {
       if (inputElements[i].type == "text") {
-        inputElements[i].value = " ";
+        inputElements[i].value = "";
       }
   }  
+} 
+// Element styling 1:03:00
+http://www.w3schools.com/jsref/dom_obj_style.asp
+
+document.getElementById('chgBkColor').onclick = function(event){
+document.getElementById('sampDiv').style.backgroundColor = "#EFDECD";
 }
+document.getElementById('chgBkImg').onclick = function(event){
+    document.getElementById('sampDiv').style.backgroundImage = "url(/assets/2320257.jpg)";
+    }
+document.getElementById('chgBorderStyle').onclick = function(event){
+        document.getElementById('sampDiv').style.borderStyle = "solid";
+        }   
+document.getElementById('chgBorderWidth').onclick = function(event){
+            document.getElementById('sampDiv').style.borderWidth = "thick";
+            }   
+document.getElementById('chgBorderColor').onclick = function(event){
+    document.getElementById('sampDiv').style.borderColor = "blue";
+                }
