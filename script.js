@@ -384,3 +384,15 @@ document.getElementById('reload').onclick = function(event){
 // jump to browser's history where user been -2 to go back in history two places and forward is +
 
 // history.go(-2)
+// Editing Child Nodes 1:09:37  
+var pElements = document.getElementsByTagName('p');
+// pElements[3].style.backgroundColor = "#EFDECD" ;
+
+// document.childNodes[1].style.backgroundColor = "#FAEBD7";
+
+var sampDiv2 = document.getElementById('sampDiv2');
+sampDiv2.childNodes[0].style.backgroundColor = "blue";
+sampDiv2.childNodes[0].childNodes[1].style.backgroundColor = "green";
+document.write("Node Type : ", sampDiv2.childNodes[0].childNodes[0].nodeType, "<br />");
+document.write("Node Name : ", sampDiv2.childNodes[0].childNodes[0].nodeName, "<br />");
+document.write("Node Name : ", sampDiv2.childNodes[0].childNodes[1].nodeName, "<br />");
