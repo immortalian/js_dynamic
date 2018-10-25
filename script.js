@@ -337,7 +337,7 @@ document.body.onmousemove = function(e){
     document.getElementById('mouseY').value = pageY;
 };
 // Get Elements By Tag Names 1:01:28
-// clear all our inputs
+// clear all our inputs *not working
 document.getElementById('clearInputs').onClick = function(event){
     var inputElements = document.getElementsByTagName('input')
     
@@ -411,3 +411,63 @@ paragraph3.setAttribute("id", "paragraph3");
 paragraph3.innerHTML = "Proin iis nulla maxime natus praesentium velit obcaecati.";
 sampDiv2.appendChild(paragraph3);
 sampDiv2.insertBefore(paragraph3, sampDiv2.childNodes[0]);
+// OO JavaScript 1:19:50
+var cust1 = {
+    name: "Njathaini Kamau",
+    street: "123 Main",
+    city: "Pittsburgh",
+    state: "PA",
+    email: "knjatha@aol.com",
+    balance: 120.50,
+    payDownBal: function(amtPaid){
+        this.balance -= amtPaid;
+    },
+    addToBal: function(amtCharged){
+        this.balance += amtCharged;
+    }
+};
+document.write("Customer Name : ", cust1.name, "<br />");
+cust1.street = "215 Main";
+document.write("Customer Street : ", cust1.street, "<br />");
+cust1.country = "US";
+document.write("Customer Country : ", cust1.country, "<br />");
+delete cust1.country;
+for (var prop in cust1){
+    if(cust1.hasOwnProperty(prop)){
+    document.write(prop, "<br />");    
+    }
+}
+document.write("name in cust1 : ", "name" in cust1, "<br />");
+function getInfo(cust){
+    return cust1.name + " lives at " + cust1.street + " in " + cust1.city + " " + cust1.state + " email : " + cust1.email + " and has a balance of $" + cust1.balance;
+}
+document.write(getInfo(cust1), "<br />");
+cust1.payDownBal(20.50);
+cust1.addToBal(10.00);
+document.write(getInfo(cust1), "<br />");
+// How to create generic objects so as to deal with many objects. you do so by an object constructor
+// creating an object constructor1:25:00
+function Customer(name, street, city, state, email, balance){
+    this.name = name;
+    this.street = street;
+    this.city = city;
+    this.state = state;
+    this.email = email;
+    this.balance = balance;
+    this.payDownBal = function(amtPaid){
+        this.balance -= amtPaid;
+    };
+    this.addToBal = function(amtCharged){
+        this.balance -= amtCharged;
+    };
+}
+var cust2 = new Customer("Sally Smith", "254 Main", "Pittsburgh", "PA", "kababa@aol.com", 0.00);
+cust2.addToBal(15.50);
+Customer.prototype.isCreditAvail = true;
+
+Customer.prototype.toString = function(){
+    return this.name + " lives at " + this.street + " in " + this.city + " " + this.state + " email : " + this.email + " and has a balance of $" + this.balance.toFixed(2) + " CreditWorthy : " + this.isCreditAvail;
+};
+
+document.write(cust2.toString());
+
