@@ -405,3 +405,9 @@ document.write("Logo has alt : ", nttLogo2.hasAttribute("alt"), "<br />");
  for(i = 0; i < attribList.length; i++){
      document.write("Attribute ", i, " : ", attribList[i].nodeName , " : ", attribList[i].nodeValue, "<br />");
  }
+//  Adding Elements 1:18:11
+var paragraph3 = document.createElement("p");
+paragraph3.setAttribute("id", "paragraph3");
+paragraph3.innerHTML = "Proin iis nulla maxime natus praesentium velit obcaecati.";
+sampDiv2.appendChild(paragraph3);
+sampDiv2.insertBefore(paragraph3, sampDiv2.childNodes[0]);
