@@ -396,3 +396,12 @@ sampDiv2.childNodes[0].childNodes[1].style.backgroundColor = "green";
 document.write("Node Type : ", sampDiv2.childNodes[0].childNodes[0].nodeType, "<br />");
 document.write("Node Name : ", sampDiv2.childNodes[0].childNodes[0].nodeName, "<br />");
 document.write("Node Name : ", sampDiv2.childNodes[0].childNodes[1].nodeName, "<br />");
+// Setting Attributes 1:15:08
+var nttLogo2 = document.getElementById('logo2');
+document.write("Logo has alt : ", nttLogo2.hasAttribute("alt"), "<br />");
+ nttLogo2.setAttribute("alt", "NTT Logo2");
+ document.write("Logo alt value : ", nttLogo2.getAttribute("alt"), "<br />");
+ var attribList = document.getElementById('logo2').attributes;
+ for(i = 0; i < attribList.length; i++){
+     document.write("Attribute ", i, " : ", attribList[i].nodeName , " : ", attribList[i].nodeValue, "<br />");
+ }
